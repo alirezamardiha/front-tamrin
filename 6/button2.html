@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button{
+display: block;
+margin: 0 0 10px 0;
+                --height : 40px;
+                height: var(--height);
+                border-radius: calc(var(--height)/2);
+                padding: 0 24px;
+                text-align: center;
+                background-color: #6750A4;
+                color: cornsilk;
+                font-family: Roboto,sans-serif;
+        }
+        .hovered:hover{
+            cursor:pointer;
+            background-color: #ffffff;
+                color:#6750A4 ;
+        }
+        .focused:focus
+        {
+            background-color: #ffffff;
+                color:#6750A4 ;
+
+        }
+        .pressed:active{
+            background-color: #ffffff;
+                color:#6750A4 ;   
+        }
+        .disabled:disabled{
+            background-color:#929292;
+            color: cornsilk;
+        }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button> enabled </button>
+  <button class="hovered"> hovered </button>
+  <button class="focused"> focused </button>
+  <button class="pressed"> pressed </button>
+<button class="disabled" disabled>
+     disabled
+
+</button>
+</body>
+</html>
